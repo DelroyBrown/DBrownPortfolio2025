@@ -444,7 +444,7 @@ function e($s)
         <section id="services" class="services section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Services</h2>
-                <p>Services I offer.</p>
+                <p>Practical development services covering everything from custom web apps to API integration, e-commerce solutions, and ongoing deployment support.</p>
             </div>
             <div class="container">
                 <div class="row gy-4">
