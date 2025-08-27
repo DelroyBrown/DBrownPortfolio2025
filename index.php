@@ -73,6 +73,7 @@ function e($s)
             <ul>
                 <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
                 <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="#skills"><i class="bi bi-braces navicon"></i> Skills</a></li>
                 <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
                 <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
                 <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
@@ -153,77 +154,140 @@ function e($s)
         <section id="skills" class="skills section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Skills</h2>
-                <p>Full stack developer skills.</p>
+                <p>Full-stack developer skills.</p>
             </div>
+
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row skills-content skills-animation">
+                    <!-- LEFT COLUMN -->
                     <div class="col-lg-6">
+                        <!-- Frontend -->
+                        <h5 class="text-uppercase text-muted fw-semibold small mb-2">Frontend</h5>
+
                         <div class="progress">
                             <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="100"></div>
                             </div>
                         </div>
+
                         <div class="progress">
                             <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
                             </div>
                         </div>
+
                         <div class="progress">
                             <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
                             </div>
                         </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>jQuery</span> <i class="val">85%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                            </div>
+                        </div>
+
                         <div class="progress">
                             <span class="skill"><span>React</span> <i class="val">70%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="70"></div>
                             </div>
                         </div>
+
+
+                        
                     </div>
+
+                    <!-- RIGHT COLUMN -->
                     <div class="col-lg-6">
+                        <!-- Backend -->
+                        <h5 class="text-uppercase text-muted fw-semibold small mb-2">Backend</h5>
+
                         <div class="progress">
                             <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="80"></div>
                             </div>
                         </div>
+
                         <div class="progress">
                             <span class="skill"><span>Python</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <span class="skill"><span>Java</span> <i class="val">60%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60"></div>
-                            </div>
-                        </div>
+
                         <div class="progress">
                             <span class="skill"><span>Django</span> <i class="val">90%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
                             </div>
                         </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Java</span> <i class="val">60%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60"></div>
+                            </div>
+                        </div>
+
                         <div class="progress">
                             <span class="skill"><span>C#</span> <i class="val">45%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="45"></div>
                             </div>
                         </div>
+
+                        <!-- Data & Cloud -->
+                        <h5 class="text-uppercase text-muted fw-semibold small mt-4 mb-2">Data & Cloud</h5>
+
+                        <div class="progress">
+                            <span class="skill"><span>MySQL</span> <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>AWS (S3 / IAM)</span> <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
+                            </div>
+                        </div>
+
+                        <!-- Design Tools -->
+                        <h5 class="text-uppercase text-muted fw-semibold small mt-4 mb-2">Design Tools</h5>
+
+                        <div class="progress">
+                            <span class="skill"><span>Figma</span> <i class="val">95%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill"><span>Photoshop</span> <i class="val">95%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section><!-- /Skills Section -->
+        </section>
+
+        <!-- /Skills Section -->
 
         <!-- Resume Section -->
         <section id="resume" class="resume section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Resume</h2>
-                <p>Things and places I've worked in the field of web/software developmemt.</p>
+                <p>Through formal full-stack training and professional roles, I’ve gained expertise in modern web technologies, API integration, and scalable solutions, consistently applying these skills to deliver secure, efficient, and user-focused applications.</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -267,11 +331,13 @@ function e($s)
                             <h5>2016 - 2019</h5>
                             <p><em>Aldgate, London - England</em></p>
                             <ul>
-                                <li>Took part in developing a secure event-management application for investor roadshows in banking
-                                sector</li>
-                                <li>Worked with in cross-disciplinary teams to deliver high-security projects on time and under
-                                budget</li>
-                               
+                                <li>Took part in developing a secure event-management application for investor roadshows
+                                    in banking
+                                    sector</li>
+                                <li>Worked with in cross-disciplinary teams to deliver high-security projects on time
+                                    and under
+                                    budget</li>
+
                             </ul>
                         </div>
                         <div class="resume-item">
@@ -279,14 +345,17 @@ function e($s)
                             <h5>2016 - Present</h5>
                             <p><em>High Wycombe - England</em></p>
                             <ul>
-                                <li>Designed and delivered 20+ custom web applications for clients in retail, hospitality, and non
-                                profits</li>
-                                <li>Integrated multiple payment gateways (Stripe, PayPal) and booking APIs into e-commerce
-                                platforms</li>
-                                <li>Employed AI tools to automate code reviews, generate unit tests, and scaffold UI, speeding up
-                                delivery cycles</li>
+                                <li>Designed and delivered 20+ custom web applications for clients in retail,
+                                    hospitality, and non
+                                    profits</li>
+                                <li>Integrated multiple payment gateways (Stripe, PayPal) and booking APIs into
+                                    e-commerce
+                                    platforms</li>
+                                <li>Employed AI tools to automate code reviews, generate unit tests, and scaffold UI,
+                                    speeding up
+                                    delivery cycles</li>
                                 <li>Provided ongoing maintenance and feature enhancements using Django, React, and AWS
-                                infrastructure</li>
+                                    infrastructure</li>
                             </ul>
                         </div>
                     </div>
@@ -298,7 +367,8 @@ function e($s)
         <section id="portfolio" class="portfolio section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Portfolio</h2>
-                <p>A showcase of web applications demonstrating full-stack development, API integration, and responsive design — built with clean code and focused on solving real-world challenges.</p>
+                <p>A showcase of web applications demonstrating full-stack development, API integration, and responsive
+                    design — built with clean code and focused on solving real-world challenges.</p>
             </div>
 
             <div class="container pb-5" data-aos="fade-up" data-aos-delay="100">
@@ -513,7 +583,7 @@ function e($s)
                 <p>© <span>Copyright</span> <strong class="px-1 sitename">Delroy Brown</strong> <span>All Rights
                         Reserved</span></p>
             </div>
-       
+
         </div>
     </footer>
 
