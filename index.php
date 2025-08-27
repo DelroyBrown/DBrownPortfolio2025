@@ -271,7 +271,7 @@ function e($s)
         <section id="portfolio" class="portfolio section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Portfolio</h2>
-                <p>Projects I've worked on.</p>
+                <p>A selection of web applications demonstrating my ability to build, integrate, and deliver functional solutions. These projects showcase full-stack development, API integration, and responsive design, with a focus on clean code, usability, and solving practical challenges through modern web technologies.</p>
             </div>
 
             <div class="container pb-5" data-aos="fade-up" data-aos-delay="100">
@@ -486,7 +486,7 @@ function e($s)
                 <p>© <span>Copyright</span> <strong class="px-1 sitename">Delroy Brown</strong> <span>All Rights
                         Reserved</span></p>
             </div>
-            <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+       
         </div>
     </footer>
 
