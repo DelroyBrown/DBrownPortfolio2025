@@ -253,13 +253,40 @@ function e($s)
                         <div class="resume-item">
                             <h4>E3D-Online</h4>
                             <h5>2021 - 2023</h5>
-                            <p><em>Chalgrove, Oxford, England</em></p>
+                            <p><em>Chalgrove, Oxford - England</em></p>
                             <ul>
                                 <li>Assisted in the development and maintenance of e-commerce applications using React
                                     and Django</li>
                                 <li>Collaborated with senior developers on features and bugfixes</li>
                                 <li>Integrated APIs and third-party services to enhance performance and UX</li>
                                 <li>Contributed to testing, debugging, and documentation</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>NetRoadshow</h4>
+                            <h5>2016 - 2019</h5>
+                            <p><em>Aldgate, London - England</em></p>
+                            <ul>
+                                <li>Took part in developing a secure event-management application for investor roadshows in banking
+                                sector</li>
+                                <li>Worked with in cross-disciplinary teams to deliver high-security projects on time and under
+                                budget</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Freelance Web/Software Developer</h4>
+                            <h5>2016 - Present</h5>
+                            <p><em>High Wycombe - England</em></p>
+                            <ul>
+                                <li>Designed and delivered 20+ custom web applications for clients in retail, hospitality, and non
+                                profits</li>
+                                <li>Integrated multiple payment gateways (Stripe, PayPal) and booking APIs into e-commerce
+                                platforms</li>
+                                <li>Employed AI tools to automate code reviews, generate unit tests, and scaffold UI, speeding up
+                                delivery cycles</li>
+                                <li>Provided ongoing maintenance and feature enhancements using Django, React, and AWS
+                                infrastructure</li>
                             </ul>
                         </div>
                     </div>
@@ -271,7 +298,7 @@ function e($s)
         <section id="portfolio" class="portfolio section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Portfolio</h2>
-                <p>A selection of web applications demonstrating my ability to build, integrate, and deliver functional solutions. These projects showcase full-stack development, API integration, and responsive design, with a focus on clean code, usability, and solving practical challenges through modern web technologies.</p>
+                <p>A showcase of web applications demonstrating full-stack development, API integration, and responsive design — built with clean code and focused on solving real-world challenges.</p>
             </div>
 
             <div class="container pb-5" data-aos="fade-up" data-aos-delay="100">
