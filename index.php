@@ -87,10 +87,11 @@ function e($s)
         <section id="hero" class="hero section dark-background">
             <img src="assets/img/img-15.jpg" alt="" data-aos="fade-in" class="">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <h2>Delroy Brown</h2>
+                <h2>Delroy J. Brown</h2>
                 <p>
-                    <span class="typed" data-typed-items="Designer, Software Developer, Freelancer">Designer</span>
-                    <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+                    <span class="typed" data-typed-items="Full-Stack Developer, Problem Solver, Creative Builder, Tech Explorer">Designer</span>
+                    <span class="typed-cursor typed-cursor--blink" aria-hidden="true">
+                    </span>
                 </p>
             </div>
         </section><!-- /Hero Section -->
@@ -200,7 +201,7 @@ function e($s)
                         </div>
 
 
-                        
+
                     </div>
 
                     <!-- RIGHT COLUMN -->
@@ -287,7 +288,9 @@ function e($s)
         <section id="resume" class="resume section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Resume</h2>
-                <p>Through formal full-stack training and professional roles, I’ve gained expertise in modern web technologies, API integration, and scalable solutions, consistently applying these skills to deliver secure, efficient, and user-focused applications.</p>
+                <p>Through formal full-stack training and professional roles, I’ve gained expertise in modern web
+                    technologies, API integration, and scalable solutions, consistently applying these skills to deliver
+                    secure, efficient, and user-focused applications.</p>
             </div>
             <div class="container">
                 <div class="row">
@@ -444,7 +447,8 @@ function e($s)
         <section id="services" class="services section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Services</h2>
-                <p>Practical development services covering everything from custom web apps to API integration, e-commerce solutions, and ongoing deployment support.</p>
+                <p>Practical development services covering everything from custom web apps to API integration,
+                    e-commerce solutions, and ongoing deployment support.</p>
             </div>
             <div class="container">
                 <div class="row gy-4">

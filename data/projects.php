@@ -24,8 +24,8 @@ return [
         "body" => "<p>Developed a full-stack Company Directory web application with PHP, MySQL, jQuery, and Bootstrap. Implemented complete CRUD functionality and AJAX-driven interactions for a seamless user experience. Designed validation rules to maintain relational integrity, demonstrating practical skills in database design, backend logic, and responsive frontend development.</p>",
         "images" => ["assets/img/company_directory_detail.png"],
         "links" => [
-            ["label" => "GitHub", "href" => "https://github.com/DelroyBrown/CompanyDirectory"],
-            ["label" => "Project", "href" => "https://delroybrown.ct.ws/CompanyDirectory/"],
+            ["label" => "GitHub", "href" => "https://github.com/DelroyBrown/delroyBrown/tree/main/project2"],
+            ["label" => "Project", "href" => "https://delroybrown.ct.ws/project2/companyDirectory/"],
         ]
     ]
 ];

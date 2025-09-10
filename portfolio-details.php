@@ -86,6 +86,7 @@ $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Projec
     </header>
 
     <main class="main">
+        <!-- ======= Portfolio Details Section ======= -->  
         <section id="portfolio-details" class="portfolio-details section">
             <div class="container">
 
