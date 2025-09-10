@@ -65,8 +65,12 @@ function e($s)
         </a>
 
         <div class="social-links text-center">
-            <a href="https://www.linkedin.com/in/delroy-brown-b83045226/" target="_blank" class="linkedin"><i
-                    class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/delroy-brown-b83045226/" target="_blank" class="linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/DelroyBrown" target="_blank" class="github">
+                <i class="bi bi-github"></i>
+            </a>
         </div>
 
         <nav id="navmenu" class="navmenu">
@@ -89,7 +93,8 @@ function e($s)
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Delroy J. Brown</h2>
                 <p>
-                    <span class="typed" data-typed-items="Full-Stack Developer, Problem Solver, Creative Builder, Tech Explorer">Designer</span>
+                    <span class="typed"
+                        data-typed-items="Full-Stack Developer, Problem Solver, Creative Builder, Tech Explorer">Designer</span>
                     <span class="typed-cursor typed-cursor--blink" aria-hidden="true">
                     </span>
                 </p>
@@ -514,7 +519,7 @@ function e($s)
         <section id="contact" class="contact section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>I’m a software developer who enjoys solving problems, writing clean code, and learning fast. If you’re looking for someone reliable, adaptable, and ready to grow with your team, I’d love to connect.</p>
             </div>
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4">
@@ -547,8 +552,8 @@ function e($s)
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                            data-aos-delay="200">
+                        <form action="forms/contact.php" method="post" class="php-email-form" id="contact-form"
+                            data-aos="fade-up" data-aos-delay="200">
                             <div class="row gy-4">
                                 <div class="col-md-6">
                                     <label for="name-field" class="pb-2">Your Name</label>
@@ -567,6 +572,11 @@ function e($s)
                                     <textarea class="form-control" name="message" rows="10" id="message-field"
                                         required></textarea>
                                 </div>
+
+                                <!-- Honeypot: kept invisible via CSS -->
+                                <input type="text" name="website" autocomplete="off" tabindex="-1"
+                                    style="position:absolute;left:-9999px;">
+
                                 <div class="col-md-12 text-center">
                                     <div class="loading">Loading</div>
                                     <div class="error-message"></div>
@@ -575,6 +585,7 @@ function e($s)
                                 </div>
                             </div>
                         </form>
+
                     </div><!-- End Contact Form -->
                 </div>
             </div>
