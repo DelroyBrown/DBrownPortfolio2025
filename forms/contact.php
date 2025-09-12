@@ -1,8 +1,4 @@
 <?php
-// forms/contact.php
-// PHPMailer-based handler for the portfolio contact form.
-// Expects POST: name, email, subject, message, (optional) website (honeypot).
-// Responds with JSON for AJAX consumption.
 
 declare(strict_types=1);
 
@@ -16,13 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// Basic CORS/same-origin check (comment out if you host API on different origin)
 if (isset($_SERVER['HTTP_ORIGIN'])) {
     $originHost = parse_url($_SERVER['HTTP_ORIGIN'], PHP_URL_HOST);
     if ($originHost && $originHost !== ($_SERVER['HTTP_HOST'] ?? '')) {
-        // http_response_code(403);
-        // echo json_encode(['ok' => false, 'error' => 'Forbidden origin']);
-        // exit;
     }
 }
 
@@ -60,7 +52,6 @@ if ($errors) {
 // -------------------------------
 // PHPMailer bootstrap
 // -------------------------------
-// Preferred: Composer autoload (root/vendor):
 $autoloadPath = __DIR__ . '/../vendor/autoload.php';
 if (file_exists($autoloadPath)) {
     require $autoloadPath;
@@ -70,14 +61,11 @@ if (file_exists($autoloadPath)) {
 if (class_exists(\Dotenv\Dotenv::class)) {
     $dotenv = \Dotenv\Dotenv::createImmutable(dirname(__DIR__));
     $dotenv->safeLoad();
-} else {
-    // no Dotenv installed — that's fine locally, but env vars won't load from .env
 }
 
 if (file_exists($autoloadPath)) {
     require $autoloadPath;
 } else {
-    // Fallback: manual includes if you downloaded PHPMailer manually into /PHPMailer
     $altBase = __DIR__ . '/../PHPMailer/src';
     if (file_exists("$altBase/PHPMailer.php")) {
         require "$altBase/Exception.php";
@@ -96,8 +84,6 @@ use PHPMailer\PHPMailer\Exception;
 // -------------------------------
 // SMTP configuration
 // -------------------------------
-// Prefer environment variables in production. For local dev, you can hardcode below temporarily.
-// Example env usage on cPanel (in .htaccess): SetEnv SMTP_HOST smtp.gmail.com
 function envOr(string $key, ?string $default = null): ?string
 {
     if (isset($_ENV[$key]) && $_ENV[$key] !== '')
