@@ -78,7 +78,7 @@ function e($s)
                 <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
                 <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
                 <li><a href="#skills"><i class="bi bi-braces navicon"></i> Skills</a></li>
-                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+                <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculum Vitae</a></li>
                 <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
                 <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
                 <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
@@ -89,7 +89,7 @@ function e($s)
     <main class="main">
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
-            <img src="assets/img/img-15.jpg" alt="" data-aos="fade-in" class="">
+            <img src="/assets/img/img-15.jpg" alt="" data-aos="fade-in" class="">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Delroy J. Brown</h2>
                 <p>
@@ -99,7 +99,8 @@ function e($s)
                     </span>
                 </p>
             </div>
-        </section><!-- /Hero Section -->
+        </section>
+        <!-- /Hero Section -->
 
         <!-- About Section -->
         <section id="about" class="about section">
@@ -121,23 +122,14 @@ function e($s)
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>April 2nd
-                                            1991</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                                        <span>www.DBrown.com</span>
-                                    </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>07795
-                                            128316</span></li>
+
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>High Wycombe,
                                             England</span></li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>34</span></li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                                        <span>delroybrown.db@gmail.com</span>
-                                    </li>
+
                                     <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
                                         <span>Available</span>
                                     </li>
@@ -164,125 +156,44 @@ function e($s)
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row skills-content skills-animation">
-                    <!-- LEFT COLUMN -->
-                    <div class="col-lg-6">
-                        <!-- Frontend -->
-                        <h5 class="text-uppercase text-muted fw-semibold small mb-2">Frontend</h5>
+                <div class="row g-4">
 
-                        <div class="progress">
-                            <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>jQuery</span> <i class="val">85%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>React</span> <i class="val">70%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70"></div>
-                            </div>
-                        </div>
-
-
-
+                    <!-- Frontend -->
+                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Frontend</h5>
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <img src="assets/img/skills/html5-original.svg" alt="HTML" width="60">
+                        <img src="assets/img/skills/css3-original.svg" alt="CSS" width="60">
+                        <img src="assets/img/skills/javascript-original.svg" alt="JavaScript" width="60">
+                        <img src="assets/img/skills/jquery-original.svg" alt="jQuery" width="60">
+                        <img src="assets/img/skills/react-original.svg" alt="jQuery" width="60">
+                      
                     </div>
 
-                    <!-- RIGHT COLUMN -->
-                    <div class="col-lg-6">
-                        <!-- Backend -->
-                        <h5 class="text-uppercase text-muted fw-semibold small mb-2">Backend</h5>
-
-                        <div class="progress">
-                            <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>Python</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>Django</span> <i class="val">90%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>Java</span> <i class="val">60%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>C#</span> <i class="val">45%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="45"></div>
-                            </div>
-                        </div>
-
-                        <!-- Data & Cloud -->
-                        <h5 class="text-uppercase text-muted fw-semibold small mt-4 mb-2">Data & Cloud</h5>
-
-                        <div class="progress">
-                            <span class="skill"><span>MySQL</span> <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>AWS (S3 / IAM)</span> <i class="val">75%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
-                            </div>
-                        </div>
-
-                        <!-- Design Tools -->
-                        <h5 class="text-uppercase text-muted fw-semibold small mt-4 mb-2">Design Tools</h5>
-
-                        <div class="progress">
-                            <span class="skill"><span>Figma</span> <i class="val">95%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
-                            </div>
-                        </div>
-
-                        <div class="progress">
-                            <span class="skill"><span>Photoshop</span> <i class="val">95%</i></span>
-                            <div class="progress-bar-wrap">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="95"></div>
-                            </div>
-                        </div>
+                    <!-- Backend -->
+                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Backend</h5>
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <img src="assets/img/skills/php-original.svg" alt="PHP" width="60">
+                        <img src="assets/img/skills/mysql-original.svg" alt="PHP" width="60">
+                        <img src="assets/img/skills/python-original.svg" alt="Python" width="60">
+                        <img src="assets/img/skills/django-plain.svg" alt="Django" width="60">
+                        <img src="assets/img/skills/java-original.svg" alt="Java" width="60">
+                        <img src="assets/img/skills/csharp-original.svg" alt="C#" width="60">
                     </div>
+
+                    <!-- Data & Cloud -->
+                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Data & Cloud</h5>
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <img src="assets/img/skills/mysql-original.svg" alt="MySQL" width="60">
+                        <img src="assets/img/skills/amazonwebservices-original.svg" alt="AWS" width="60">
+                    </div>
+
+                    <!-- Design Tools -->
+                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Design Tools</h5>
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <img src="assets/img/skills/figma-original.svg" alt="Figma" width="60">
+                        <img src="assets/img/skills/photoshop-plain.svg" alt="Photoshop" width="60">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -292,7 +203,8 @@ function e($s)
         <!-- Resume Section -->
         <section id="resume" class="resume section">
             <div class="container section-title" data-aos="fade-up">
-                <h2>Resume</h2>
+                <h2>Curriculum Vitae</h2>
+                <a href="assets/img/delroyBrown-CV.pdf" class="btn btn-lg btn-dark rounded-0 mb-4" download>Download CV</a>
                 <p>Through formal full-stack training and professional roles, I’ve gained expertise in modern web
                     technologies, API integration, and scalable solutions, consistently applying these skills to deliver
                     secure, efficient, and user-focused applications.</p>
@@ -460,8 +372,11 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Custom Web
-                                    Application Development</a></h4>
+                            <h4 class="title">
+                                <a href="javascript:void(0)" class="stretched-link">Custom Web
+                                    Application Development
+                                </a>
+                            </h4>
                             <p class="description">Building scalable, responsive applications using React, PHP, Django
                                 and other modern frameworks.</p>
                         </div>
@@ -469,7 +384,7 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">E-Commerce
+                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">E-Commerce
                                     Solutions</a></h4>
                             <p class="description">Developing and maintaining secure, high-performance online stores
                                 with payment gateway integration</p>
@@ -478,7 +393,7 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">API Development &
+                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">API Development &
                                     Integration</a></h4>
                             <p class="description">Creating and connecting RESTful APIs to streamline data flow between
                                 platforms</p>
@@ -487,7 +402,7 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Database Design &
+                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">Database Design &
                                     Management</a></h4>
                             <p class="description">Implementing efficient, secure database solutions with SQL and
                                 Firestore</p>
@@ -496,7 +411,7 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX
+                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">UI/UX
                                     Implementation</a></h4>
                             <p class="description">Turning designs into polished, interactive front ends optimized for
                                 performance and accessibility</p>
@@ -505,7 +420,7 @@ function e($s)
                     <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
                         <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
                         <div>
-                            <h4 class="title"><a href="service-details.html" class="stretched-link">Deployment &
+                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">Deployment &
                                     Maintenance</a></h4>
                             <p class="description">Hosting, monitoring, and optimizing applications on platforms like
                                 Heroku and cloud services</p>
@@ -519,7 +434,9 @@ function e($s)
         <section id="contact" class="contact section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact</h2>
-                <p>I’m a software developer who enjoys solving problems, writing clean code, and learning fast. If you’re looking for someone reliable, adaptable, and ready to grow with your team, I’d love to connect.</p>
+                <p>I’m a software developer who enjoys solving problems, writing clean code, and learning fast. If
+                    you’re looking for someone reliable, adaptable, and ready to grow with your team, I’d love to
+                    connect.</p>
             </div>
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4">
