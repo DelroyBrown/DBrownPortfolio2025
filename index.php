@@ -80,7 +80,7 @@ function e($s)
                 <li><a href="#skills"><i class="bi bi-braces navicon"></i> Skills</a></li>
                 <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculum Vitae</a></li>
                 <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+                <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
                 <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
             </ul>
         </nav>
@@ -89,7 +89,7 @@ function e($s)
     <main class="main">
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
-            <img src="assets/img/img-15-opt.jpg" alt="" data-aos="fade-in" class="">
+            <img src="assets/img/hero-image.png" alt="" data-aos="fade-in" class="">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Delroy J. Brown</h2>
                 <p>
@@ -111,7 +111,7 @@ function e($s)
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="assets/img/img-12-opt.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/about-img.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 content">
                         <h2>UI/UX Designer &amp; Web Developer.</h2>
@@ -139,55 +139,156 @@ function e($s)
                     </div>
                 </div>
             </div>
-        </section><!-- /About Section -->
+        </section>
+        <!-- /About Section -->
 
         <!-- Skills Section -->
         <section id="skills" class="skills section light-background">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Skills</h2>
-                <p>Full-stack developer skills.</p>
+                <p>Full-stack developer skilled in HTML, CSS, JavaScript, React, Python, Django, PHP, MySQL, Java, C#, AWS, and modern design tools—building fast, scalable, and user-focused web applications from frontend to backend.</p>
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row g-4">
 
-                    <!-- Frontend -->
-                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Frontend</h5>
-                    <div class="d-flex flex-wrap gap-4 mb-4">
-                        <img src="assets/img/skills/html5-original.svg" alt="HTML" width="60">
-                        <img src="assets/img/skills/css3-original.svg" alt="CSS" width="60">
-                        <img src="assets/img/skills/javascript-original.svg" alt="JavaScript" width="60">
-                        <img src="assets/img/skills/jquery-original.svg" alt="jQuery" width="60">
-                        <img src="assets/img/skills/react-original.svg" alt="jQuery" width="60">
+                <!-- Front end -->
+                <h5 class="text-uppercase text-muted fw-semibold small mb-3">
+                    Front end
+                </h5>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
 
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/html5-original.svg" alt="HTML5" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">HTML5</small>
+                        </div>
                     </div>
 
-                    <!-- Backend -->
-                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Backend</h5>
-                    <div class="d-flex flex-wrap gap-4 mb-4">
-                        <img src="assets/img/skills/php-original.svg" alt="PHP" width="60">
-                        <img src="assets/img/skills/mysql-original.svg" alt="PHP" width="60">
-                        <img src="assets/img/skills/python-original.svg" alt="Python" width="60">
-                        <img src="assets/img/skills/django-plain.svg" alt="Django" width="60">
-                        <img src="assets/img/skills/java-original.svg" alt="Java" width="60">
-                        <img src="assets/img/skills/csharp-original.svg" alt="C#" width="60">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/css3-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">CSS3</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/javascript-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">Javascript</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/jquery-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">JQuery</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/react-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">React</small>
+                        </div>
                     </div>
 
-                    <!-- Data & Cloud -->
-                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Data & Cloud</h5>
-                    <div class="d-flex flex-wrap gap-4 mb-4">
-                        <img src="assets/img/skills/mysql-original.svg" alt="MySQL" width="60">
-                        <img src="assets/img/skills/amazonwebservices-original.svg" alt="AWS" width="60">
+                    <!-- repeat for JS, jQuery, React, etc. -->
+
+                </div>
+                
+                <!-- Back end -->
+                <h5 class="text-uppercase text-muted fw-semibold small mt-5">
+                    Back end
+                </h5>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
+
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/php-original.svg" alt="HTML5" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">PHP</small>
+                        </div>
                     </div>
 
-                    <!-- Design Tools -->
-                    <h5 class="text-uppercase text-muted fw-semibold small mb-3">Design Tools</h5>
-                    <div class="d-flex flex-wrap gap-4 mb-4">
-                        <img src="assets/img/skills/figma-original.svg" alt="Figma" width="60">
-                        <img src="assets/img/skills/photoshop-plain.svg" alt="Photoshop" width="60">
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/mysql-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">MySQL</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/python-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">Python</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/django-plain.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">Django</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/java-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">Java</small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/csharp-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">C#</small>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Data & Cloud -->
+                <h5 class="text-uppercase text-muted fw-semibold small mt-5">
+                    Data & Cloud
+                </h5>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
+
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/mysql-original.svg" alt="HTML5" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">MySQL</small>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="d-flex flex-column align-items-center p-3 rounded-3 bg-body shadow-sm h-100">
+                            <img src="assets/img/skills/amazonwebservices-original.svg" alt="CSS3" class="img-fluid"
+                                style="max-height:64px; object-fit:contain" width="150" height="150" loading="lazy"
+                                decoding="async">
+                            <small class="text-muted mt-2">AWS</small>
+                        </div>
                     </div>
 
                 </div>
+
+           
             </div>
         </section>
         <!-- /Skills Section -->
@@ -254,7 +355,7 @@ function e($s)
                             </ul>
                         </div>
                         <div class="resume-item">
-                            <h4>Freelance Web/Software Developer</h4>
+                            <h4>Web/Software Developer</h4>
                             <h5>2016 - Present</h5>
                             <p><em>High Wycombe - England</em></p>
                             <ul>
@@ -274,7 +375,8 @@ function e($s)
                     </div>
                 </div>
             </div>
-        </section><!-- /Resume Section -->
+        </section>
+        <!-- /Resume Section -->
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio section light-background">
@@ -291,9 +393,9 @@ function e($s)
                         <div class="alert alert-warning">No projects configured yet. Create <code>data/projects.php</code>.
                         </div>
                     <?php endif; ?>
-                    <div class="row g-4">
+                    <div class="row justify-content-center g-4">
                         <?php foreach ($projects as $p): ?>
-                            <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="col-12 col-md-6 col-lg-6">
                                 <article class="card h-100 shadow-sm">
                                     <?php if (!empty($p['thumb'])): ?>
                                         <img src="<?= e($p['thumb']) ?>" class="card-img-top" alt="<?= e($p['title']) ?>">
@@ -305,7 +407,6 @@ function e($s)
                                                 data-project="<?= e($p['slug']) ?>">
                                                 <?= e($p['title']) ?>
                                             </a>
-
                                         </h2>
                                         <?php if (!empty($p['summary'])): ?>
                                             <p class="text-muted small mb-3"><?= e($p['summary']) ?></p>
@@ -323,6 +424,7 @@ function e($s)
                             </div>
                         <?php endforeach; ?>
                     </div>
+
                 <?php else: ?>
                     <!-- Project detail -->
                     <article class="row g-4">
@@ -373,77 +475,9 @@ function e($s)
                 </div>
             </div>
 
-        </section><!-- /Portfolio Section -->
+        </section>
+        <!-- /Portfolio Section -->
 
-        <!-- Services Section -->
-        <section id="services" class="services section">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Practical development services covering everything from custom web apps to API integration,
-                    e-commerce solutions, and ongoing deployment support.</p>
-            </div>
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-                        <div>
-                            <h4 class="title">
-                                <a href="javascript:void(0)" class="stretched-link">Custom Web
-                                    Application Development
-                                </a>
-                            </h4>
-                            <p class="description">Building scalable, responsive applications using React, PHP, Django
-                                and other modern frameworks.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-                        <div>
-                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">E-Commerce
-                                    Solutions</a></h4>
-                            <p class="description">Developing and maintaining secure, high-performance online stores
-                                with payment gateway integration</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-                        <div>
-                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">API Development &
-                                    Integration</a></h4>
-                            <p class="description">Creating and connecting RESTful APIs to streamline data flow between
-                                platforms</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-                        <div>
-                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">Database Design &
-                                    Management</a></h4>
-                            <p class="description">Implementing efficient, secure database solutions with SQL and
-                                Firestore</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-                        <div>
-                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">UI/UX
-                                    Implementation</a></h4>
-                            <p class="description">Turning designs into polished, interactive front ends optimized for
-                                performance and accessibility</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                        <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-                        <div>
-                            <h4 class="title"><a href="javascript:void(0)" class="stretched-link">Deployment &
-                                    Maintenance</a></h4>
-                            <p class="description">Hosting, monitoring, and optimizing applications on platforms like
-                                Heroku and cloud services</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /Services Section -->
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
@@ -464,7 +498,7 @@ function e($s)
                                     <p>High Wycombe, England</p>
                                 </div>
                             </div>
-                           
+
                             <iframe src="https://www.google.com/maps?q=High+Wycombe,+England&output=embed"
                                 frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
