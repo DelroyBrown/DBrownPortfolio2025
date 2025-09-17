@@ -55,7 +55,7 @@ function e($s)
         <i class="header-toggle d-xl-none bi bi-list"></i>
 
         <div class="profile-img">
-            <img src="assets/img/img-13.jpg" alt="" class="img-fluid rounded-circle">
+            <img src="assets/img/img-13-opt.jpg" alt="" class="img-fluid rounded-circle">
         </div>
 
         <!-- link back to this PHP file, not index.html -->
@@ -89,7 +89,7 @@ function e($s)
     <main class="main">
         <!-- Hero Section -->
         <section id="hero" class="hero section dark-background">
-            <img src="/assets/img/img-15.jpg" alt="" data-aos="fade-in" class="">
+            <img src="assets/img/img-15-opt.jpg" alt="" data-aos="fade-in" class="">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Delroy J. Brown</h2>
                 <p>
@@ -111,7 +111,7 @@ function e($s)
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-4 justify-content-center">
                     <div class="col-lg-4">
-                        <img src="assets/img/img-12.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/img-12-opt.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 content">
                         <h2>UI/UX Designer &amp; Web Developer.</h2>
@@ -127,14 +127,7 @@ function e($s)
                                             England</span></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6">
-                                <ul>
-
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                                        <span>Available</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            -->
                         </div>
                         <p class="py-3">
                             I’m a full-stack developer who loves turning ideas into working applications, whether that
@@ -166,7 +159,7 @@ function e($s)
                         <img src="assets/img/skills/javascript-original.svg" alt="JavaScript" width="60">
                         <img src="assets/img/skills/jquery-original.svg" alt="jQuery" width="60">
                         <img src="assets/img/skills/react-original.svg" alt="jQuery" width="60">
-                      
+
                     </div>
 
                     <!-- Backend -->
@@ -197,14 +190,14 @@ function e($s)
                 </div>
             </div>
         </section>
-
         <!-- /Skills Section -->
 
         <!-- Resume Section -->
         <section id="resume" class="resume section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>Curriculum Vitae</h2>
-                <a href="assets/img/delroyBrown-CV.pdf" class="btn btn-lg btn-dark rounded-0 mb-4" download>Download CV</a>
+                <a href="assets/img/delroyBrown-CV.pdf" class="btn btn-lg btn-dark rounded-0 mb-4" download>Download
+                    CV</a>
                 <p>Through formal full-stack training and professional roles, I’ve gained expertise in modern web
                     technologies, API integration, and scalable solutions, consistently applying these skills to deliver
                     secure, efficient, and user-focused applications.</p>
@@ -308,9 +301,11 @@ function e($s)
                                     <div class="card-body d-flex flex-column">
                                         <h2 class="h5 card-title mb-2">
                                             <a href="portfolio-details.php?project=<?= urlencode($p['slug']) ?>"
-                                                class="stretched-link text-decoration-none">
+                                                class="stretched-link text-decoration-none project-link"
+                                                data-project="<?= e($p['slug']) ?>">
                                                 <?= e($p['title']) ?>
                                             </a>
+
                                         </h2>
                                         <?php if (!empty($p['summary'])): ?>
                                             <p class="text-muted small mb-3"><?= e($p['summary']) ?></p>
@@ -358,6 +353,26 @@ function e($s)
                     </article>
                 <?php endif; ?>
             </div>
+
+
+            <!-- Project Modal -->
+            <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Loading…</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="py-5 text-center">
+                                <div class="spinner-border" role="status"></div>
+                                <div class="mt-2 small text-muted">Fetching project…</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section><!-- /Portfolio Section -->
 
         <!-- Services Section -->
@@ -449,20 +464,7 @@ function e($s)
                                     <p>High Wycombe, England</p>
                                 </div>
                             </div>
-                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                                <i class="bi bi-telephone flex-shrink-0"></i>
-                                <div>
-                                    <h3>Call Me</h3>
-                                    <p>07795 128316</p>
-                                </div>
-                            </div>
-                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                                <i class="bi bi-envelope flex-shrink-0"></i>
-                                <div>
-                                    <h3>Email Me</h3>
-                                    <p>delroybrown.db@gmail.com</p>
-                                </div>
-                            </div>
+                           
                             <iframe src="https://www.google.com/maps?q=High+Wycombe,+England&output=embed"
                                 frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -540,6 +542,47 @@ function e($s)
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const a = e.target.closest('a.project-link');
+            if (!a) return;
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return; // allows new-tab
+            e.preventDefault();
+
+            const url = a.getAttribute('href') + '&partial=1';
+            const modalEl = document.getElementById('projectModal');
+            const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+
+            modalEl.querySelector('.modal-title').textContent = 'Loading…';
+            modalEl.querySelector('.modal-body').innerHTML =
+                '<div class="py-5 text-center"><div class="spinner-border" role="status"></div><div class="mt-2 small text-muted">Fetching project…</div></div>';
+
+            modal.show();
+
+            fetch(url, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+                .then(html => {
+                    const tmp = document.createElement('div'); tmp.innerHTML = html.trim();
+                    const titleNode = tmp.querySelector('[data-modal-title]');
+                    modalEl.querySelector('.modal-title').textContent = titleNode ? titleNode.getAttribute('data-modal-title') : a.textContent.trim();
+
+                    const respModalContent = tmp.querySelector('.modal-content');
+                    if (respModalContent) {
+                        modalEl.querySelector('.modal-dialog').replaceChildren(respModalContent);
+                    } else {
+                        modalEl.querySelector('.modal-body').innerHTML = html;
+                    }
+                })
+                .catch(err => {
+                    modalEl.querySelector('.modal-body').innerHTML =
+                        '<div class="alert alert-danger">Couldn’t load that project (' + err.message + '). ' +
+                        '<a href="' + a.href + '">Open full page</a>.</div>';
+                });
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 <?php
-// --- Loads one project by slug and renders it in the iPortfolio details layout ---
 $projectsFile = __DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'projects.php';
 if (!is_file($projectsFile)) {
     http_response_code(500);
@@ -21,7 +20,70 @@ function e($s)
 }
 
 $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Project not found · Portfolio';
+
+$isPartial = (isset($_GET['partial']) && $_GET['partial'] == '1') ||
+    (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
+        strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest');
+
+if ($isPartial) {
+    header('Content-Type: text/html; charset=utf-8');
+    if (!$current) {
+        http_response_code(404);
+        echo '<div class="alert alert-danger mt-4">Project not found.</div>';
+        exit;
+    }
+
+    echo '<div class="modal-body">';
+    ?>
+    <div class="row gy-4">
+        <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <?php $imgs = !empty($current['images']) && is_array($current['images']) ? $current['images'] : []; ?>
+                    <?php foreach ($imgs as $img): ?>
+                        <div class="swiper-slide"><img src="<?= e($img) ?>" class="img-fluid rounded"
+                                alt="<?= e($current['title']) ?>"></div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="portfolio-info">
+                <h3><?= e($current['title']) ?></h3>
+                <ul class="list-unstyled small p-0">
+                    <?php if (!empty($current['tech'])): ?>
+                        <li>
+                            <strong>Tech Stack</strong>: <?= e(implode(', ', $current['tech'])) ?>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (!empty($current['links'])):
+                        foreach ($current['links'] as $lnk): ?>
+                            <div class="row my-3 ms-0 p-0">
+                                <li class="row">
+                                <a class="btn btn-sm rounded-0 btn-outline-dark" href="<?= e($lnk['href']) ?>" target="_blank"
+                                    rel="noopener"><?= e($lnk['label']) ?>
+                                </a>
+                            </li>
+                            </div>
+                        <?php endforeach; endif; ?>
+                </ul>
+            </div>
+            <div class="portfolio-description">
+                <?php if (!empty($current['detail-summary'])): ?>
+                    <p class="lead fw-semibold"><?= e($current['detail-summary']) ?></p><?php endif; ?>
+                <div><?= !empty($current['body']) ? $current['body'] : '<p>No additional description provided.</p>' ?></div>
+            </div>
+        </div>
+    </div>
+    <?php
+    echo '</div>';
+    exit;
+}
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +122,7 @@ $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Projec
         <i class="header-toggle d-xl-none bi bi-list"></i>
 
         <div class="profile-img">
-            <img src="assets/img/img-13.jpg" alt="" class="img-fluid rounded-circle">
+            <img src="assets/img/img-13-opt.jpg" alt="" class="img-fluid rounded-circle">
         </div>
 
         <a href="index.php" class="logo d-flex align-items-center justify-content-center">
@@ -77,7 +139,7 @@ $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Projec
             <ul>
                 <li><a href="index.php#hero"><i class="bi bi-house navicon"></i> Home</a></li>
                 <li><a href="index.php#about"><i class="bi bi-person navicon"></i> About</a></li>
-                <li><a href="index.php#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+                <li><a href="index.php#resume"><i class="bi bi-file-earmark-text navicon"></i> Curriculum Vitae</a></li>
                 <li><a href="index.php#portfolio" class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
                 <li><a href="index.php#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
                 <li><a href="index.php#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
@@ -86,7 +148,7 @@ $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Projec
     </header>
 
     <main class="main">
-        <!-- ======= Portfolio Details Section ======= -->  
+        <!-- ======= Portfolio Details Section ======= -->
         <section id="portfolio-details" class="portfolio-details section">
             <div class="container">
 
@@ -170,7 +232,7 @@ $title = $current ? ($current['title'] ?? 'Project') . ' · Portfolio' : 'Projec
                 <p>© <span>Copyright</span> <strong class="px-1 sitename">Delroy Brown</strong> <span>All Rights
                         Reserved</span></p>
             </div>
-          
+
         </div>
     </footer>
 
