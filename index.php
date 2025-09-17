@@ -127,7 +127,6 @@ function e($s)
                                             England</span></li>
                                 </ul>
                             </div>
-                            -->
                         </div>
                         <p class="py-3">
                             I’m a full-stack developer who loves turning ideas into working applications, whether that
